@@ -1,5 +1,5 @@
 // Libraries
-require('dotenv').config();
+// require('dotenv').config();
 import express from "express";
 import multer from "multer";
 
@@ -51,16 +51,16 @@ import {s3Upload} from '../../utils/s3';
      }
  });
 
-    Router.get("/:_id", async(req,res) =>{
-        try{
-            const {_id} = req.params();
-            const image = await ImageModel.findById(_id)
+Router.get("/:_id", async(req,res) =>{
+    try{
+        const {_id} = req.params;
+        const image = await ImageModel.findById(_id);
 
-            return res.status(200).json(image);
-        }catch(error){
-            return res.status(500).json({error: error.message});
-        }
-    })
+        return res.status(200).json(image);
+    }catch(error){
+        return res.status(500).json({error: error.message});
+    }
+})
 
 
 export default Router;
