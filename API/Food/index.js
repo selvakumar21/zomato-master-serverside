@@ -17,9 +17,9 @@ const Router = express.Router();
  * Access           Public
  * Method           GET
  */
-Router.get('/:id', async( req,res) => {
+Router.get('/:_id', async( req,res) => {
     try{
-        const {_id } = req.params();
+        const {_id } = req.params;
         const foods = await FoodModel.findById(_id);
         return res.json({ foods });
         

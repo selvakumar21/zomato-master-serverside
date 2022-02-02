@@ -58,7 +58,7 @@ Router.get("/", passport.authenticate("jwt"), async (req, res) => {
  * Method           PUT
  */
 
- Router.put("/update/:userid",async (req,res) => {
+ Router.put("/update/:userId",async (req,res) => {
     try{
         const {userId} = req.params;
         const {userData} = req.body;
