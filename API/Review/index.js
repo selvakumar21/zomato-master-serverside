@@ -33,7 +33,7 @@ Router.get("/:resid",async (req,res) => {
  * Method           POST
  */
 
- Router.get("/new", passport.authenticate("jwt"), async (req,res) => {
+ Router.post("/new", passport.authenticate("jwt"), async (req,res) => {
     try{
         const {_id} = req.session.passport.user._doc;
         const {reviewData} = req.body;

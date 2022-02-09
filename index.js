@@ -11,6 +11,9 @@ import ConnectDB from "./database/connection";
 // google authentication config
 import googleAuthConfig from './config/google.config';
 
+// private route authentication config
+import privateRouteConfig from './config/route.config'
+
 //API
 import Auth from './API/Auth' 
 import Restaurant from './API/Restaurant'
@@ -24,10 +27,6 @@ import User from './API/User'
 //passport config
 googleAuthConfig(passport);
 privateRouteConfig(passport);
-
-// private route authentication config
-import privateRouteConfig from './config/route.config'
-
 
 const zomato = express();
 zomato.use(express.json()); //to read json body request (middleware) 
