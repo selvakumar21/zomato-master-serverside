@@ -11,7 +11,7 @@ export const ValidateSignup = (userData) => {
                     details: joi.string().required,
                     for: joi.string()
                 })),
-            phoneNumber: joi.number().min(10).max(10)
+            phoneNumber: joi.number(),
     })
 
     return Schema.validateAsync(userData);

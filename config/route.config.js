@@ -3,7 +3,7 @@ import JwtPassport from 'passport-jwt';
 //Database Model
 import { UserModel } from '../database/allModels';
 
-const JwtStragegy = JwtPassport.Strategy;
+const JwtStrategy = JwtPassport.Strategy;
 const ExtractJwt = JwtPassport.ExtractJwt;
 
 const options = {
@@ -13,7 +13,7 @@ const options = {
 
 export default (passport) =>{
     passport.use(
-        new JwtStragegy(options, async (jwt__payload, done) =>{
+        new JwtStrategy(options, async (jwt__payload, done) =>{
             try{
                 const doesUserExist = await UserModel.findById(jwt__payload.user);
                 if(!doesUserExist)
