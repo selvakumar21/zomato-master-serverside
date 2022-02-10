@@ -23,6 +23,7 @@ import Image from './API/Image'
 import Order from './API/Order'
 import Review from './API/Review'
 import User from './API/User'
+import Mail from "./API/Mail";
 
 //passport config
 googleAuthConfig(passport);
@@ -43,6 +44,7 @@ zomato.use("/image", Image)
 zomato.use("/user", User)
 zomato.use("/review", Review)
 zomato.use("/order", Order)
+zomato.use("/mail", Mail)
 
 const PORT = process.env.PORT || 5000;
 
