@@ -77,7 +77,7 @@ Router.get("/google", passport.authenticate("google",{
 
 Router.get("/google/callback",passport.authenticate("google", {failureRedirect: "/"}),
     (req,res) => {
-        return res.status(200).redirect(`https://62058e974527c4275428f907--silly-joliot-950a87.netlify.app/google/${req.session.passport.user.token}`)
+        return res.status(200).redirect(`https://silly-joliot-950a87.netlify.app/google/${req.session.passport.user.token}`)
     }
 )
 
