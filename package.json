@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "dev": "nodemon --exec babel-node index.js",
-    "build": "babel build"
+    "dev": "nodemon --exec babel-node index.js"
   },
   "author": "Selvakumar",
   "license": "ISC",
@@ -25,9 +24,7 @@
     "nodemon": "^2.0.15",
     "passport": "^0.5.0",
     "passport-google-oauth20": "^2.0.0",
-    "passport-jwt": "^4.0.0"
-  },
-  "devDependencies": {
+    "passport-jwt": "^4.0.0",
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/node": "^7.16.0",
