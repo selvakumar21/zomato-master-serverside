@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node index.js",
-    "dev": "nodemon --exec babel-node index.js"
+    "dev": "nodemon --exec babel-node index.js",
+    "build": "babel src -d build"
   },
   "author": "Selvakumar",
   "license": "ISC",
