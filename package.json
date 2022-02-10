@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "description": "Zomato backend in Nodejs",
   "main": "index.js",
+  "scripts": {
+    "start": "babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js"
+  },
+  "author": "Selvakumar",
+  "license": "ISC",
   "dependencies": {
     "aws-sdk": "^2.1036.0",
     "bcryptjs": "^2.4.3",
@@ -25,11 +31,5 @@
     "@babel/preset-env": "^7.16.0",
     "@babel/node": "^7.16.0",
     "@babel/cli": "^7.16.0"
-  },
-  "scripts": {
-    "start": "babel-node index.js",
-    "dev": "nodemon --exec babel-node index.js"
-  },
-  "author": "Selvakumar",
-  "license": "ISC"
+  }
 }
