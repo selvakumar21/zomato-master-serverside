@@ -10,6 +10,10 @@
   "author": "Selvakumar",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
     "aws-sdk": "^2.1036.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -21,13 +25,9 @@
     "mailgun-js": "^0.22.0",
     "mongoose": "^6.0.13",
     "multer": "^1.4.3",
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.20",
     "passport": "^0.5.0",
     "passport-google-oauth20": "^2.0.0",
-    "passport-jwt": "^4.0.0",
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.0",
-    "@babel/node": "^7.16.0",
-    "@babel/cli": "^7.16.0"
+    "passport-jwt": "^4.0.0"
   }
 }
